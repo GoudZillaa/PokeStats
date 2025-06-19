@@ -1,0 +1,22 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  background-color: black;
+  background-image: 
+    linear-gradient(to right, gray 1px, transparent 1px),   /* vertical grid lines */
+    linear-gradient(to bottom, gray 1px, transparent 1px),  /* horizontal grid lines */
+    linear-gradient(to top,
+      #1faef6 0%,        /* blue at the very bottom */
+      #1faef6 5%,       /* keep it solid a bit longer */
+      #0a0a0a 30%,       /* start transitioning */
+      #000000 50%,       /* ends fully black around middle */
+      #000000 100%
+    );
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+  background-repeat: repeat, repeat, no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+}
