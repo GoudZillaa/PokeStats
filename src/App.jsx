@@ -14,6 +14,11 @@ function App() {
     setInputValue(e.target.value);
   }
   const fetchPokemon =async()=>{
+    if(!inputValue){
+      alert("Enter a Name first!")
+      throw new Error("enter a name!");
+      return
+    }
     setInputValue("")
     const pokemon=inputValue.toLowerCase().trim();
     const response= await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemon}`)
