@@ -4,6 +4,8 @@ import upper from "./assets/upper.svg";
 import lower from "./assets/lower.svg";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from '@mui/icons-material/Close';
+import upper1 from "./assets/upper1.png";
+import lower1 from "./assets/lower1.png";
 function App() {
   const [count, setCount] = useState(0);
   const [clicked, setClicked] = useState(false);
@@ -42,7 +44,7 @@ function App() {
       </div>
       <div className="pokedex_container">
         <div className={`upper ${clicked ? "open" : ""}`}>
-          <img className="pokedex_upper" src={upper} alt="pokedex_upper" />
+          <img className="pokedex_upper" src={upper1} alt="pokedex_upper" />
         </div>
 
         {clicked && (
@@ -139,7 +141,7 @@ function App() {
         )}
 
         <div className={`lower ${clicked ? "open" : ""}`}>
-          <img className="pokedex_lower" src={lower} alt="pokedex_lower" />
+          <img className="pokedex_lower" src={lower1} alt="pokedex_lower" />
         </div>
       </div>
     </div>
