@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from '@mui/icons-material/Close';
 import upper1 from "./assets/upper1.png";
 import lower1 from "./assets/lower1.png";
+import pokeTitle from "./assets/poke-title.png"
 function App() {
   const [count, setCount] = useState(0);
   const [clicked, setClicked] = useState(false);
@@ -36,6 +37,9 @@ function App() {
 
   return (
     <div className="pokedex">
+      <div className={clicked?"hiddenLogo":"logo"}>
+        <img src={pokeTitle} alt="logo" className="logoimg" />
+      </div>
       <div className={`${clicked ? "triggerBtnClose" : "triggerBtn"}`} onClick={() => setClicked(true)}>
         <SearchIcon className="searchIcon" sx={{ fontSize: "60px", color: "#1faef6" }} />
       </div>

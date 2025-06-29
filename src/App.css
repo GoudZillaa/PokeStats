@@ -2,6 +2,31 @@
   font-family: monospace;
   color: #1faef6;
 }
+.logo{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.hiddenLogo{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.logoimg{
+  width:350px;
+  height:auto;
+}
+
 .pokedex{
   height: 100vh;
   width: 100vw;
@@ -186,6 +211,24 @@ td{
 /* mobile styling */
 
 @media (max-width:768px){
+  .logo{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.hiddenLogo{
+  display: none;
+}
+.logoimg{
+  width:250px;
+  height:auto;
+  margin-bottom: 20px;
+}
   .pokedex{
   height: 100dvh;
   width: 100vw;
